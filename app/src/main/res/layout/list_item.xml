@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+
+        android:layout_height="120dp"
+        tools:src="@drawable/ic_add"/>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="Name"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/list_price"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            tools:text="Price"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/list_quantity"
+        android:gravity="center"
+        tools:text="Quantity"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        />
+    <ImageView
+        android:padding="20dp"
+        android:id="@+id/buy"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/sale"/>
+
+
+</LinearLayout>

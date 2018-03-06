@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        tools:context=".EditorActivity">
+
+        <ImageView
+
+            android:id="@+id/action_camera"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:padding="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_camera" />
+
+        <LinearLayout
+
+            style="@style/wmp_hwc"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                style="@style/wmp_hwc"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/wmp_hwc"
+                    android:hint="Name" />
+
+                <EditText
+                    android:id="@+id/price"
+                    style="@style/wmp_hwc"
+                    android:layout_height="wrap_content"
+                    android:hint="Price" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            style="@style/wmp_hwc">
+
+            <RelativeLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:id="@+id/minus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_add" />
+
+                <ImageView
+                    android:id="@+id/plus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_add" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/display_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Restock"
+            style="@style/wmp_hwc"
+            android:text="Quantity updation not allowed \nPls Restock "
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:background="#90a4ae" />
+
+        <TextView
+            style="@style/wmp_hwc"
+            android:gravity="center"
+            android:text="Restock Options"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            style="@style/wmp_hwc"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="SUPPLIER Email Id"
+                android:textSize="15dp" />
+
+            <EditText style="@style/wmp_hwc"
+                android:id="@+id/email_id"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="35dp"
+            style="@style/wmp_hwc"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Restock Quantity"
+                android:textSize="15dp" />
+
+            <EditText style="@style/wmp_hwc"
+                android:id="@+id/orderquantity"
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/order"
+            android:text="ORDER"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+           android:paddingTop="10dp"
+           android:background="#ffc107"
+            android:layout_marginBottom="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="order"
+            android:src="@drawable/ic_add"/>
+
+
+    </LinearLayout>
+</ScrollView>

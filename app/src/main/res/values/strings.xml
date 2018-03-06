@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Inventory_App</string>
+    <string name="Editor_add">Add item</string>
+    <string name="Edittor_edit">Edit item</string>
+</resources>
